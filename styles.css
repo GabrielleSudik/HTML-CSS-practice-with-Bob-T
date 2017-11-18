@@ -1,0 +1,88 @@
+﻿/* Bob encourages us to stick with the easier styles first, only get
+more specific when you really need to.*/
+
+/*use !important when something should override everything else
+like color: red !important;
+will override anything that would ordinarily trump it.*/
+
+/*there's an order to what styles take precedence. you can see it in
+the dev tools... struck-out stuff is overriden by styles that take precendence*/
+
+h1{
+font-family: Arial;
+color: purple;
+}
+
+.important{
+color: red;
+}
+
+#somesuch{
+color: navy;
+}
+
+span.important{
+color: darkred;
+}
+
+h2, h3, p.important{
+ margin-left: 50px;
+}
+
+a:link{
+text-decoration: none;
+color: greenyellow;
+}
+
+a:hover{
+color: darkgreen;
+}
+
+a:visited{
+text-decoration: underline;
+}
+
+p:first-letter{
+font-size:3em;
+}
+
+article:before{
+content: '**********';
+}
+
+p:after{
+content:'%%%%%';
+}
+
+p:first-of-type{
+margin-right: 200px;
+}
+
+li:first-child{
+font-style: italic;
+}
+
+li:last-child{
+font-weight: bold;
+}
+
+li:nth-of-type(3){
+text-decoration:underline;
+}
+
+span[title] {
+color: black;
+}
+
+span[title="first idea"] {
+text-decoration: line-through;
+}
+
+a[href^="email"] {
+font-size:2em;
+}
+
+span[title$="idea"] {
+text-decoration: overline;
+}
+
